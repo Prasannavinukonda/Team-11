@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Backend runtime
+backend/.env
+backend/visionguard.db
+backend/uploads/*
+!backend/uploads/.gitkeep
+# NOTE: best_model.pth IS included in this delivered project/zip -- it's
+# only excluded from *git* tracking here since 68MB checkpoints don't
+# belong in a git history. Use Git LFS if you want to version it.
+backend/app/ml/weights/*.pth
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# Training artifacts
+notebooks/data/
+notebooks/checkpoints/
+notebooks/kaggle.json
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
